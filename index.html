@@ -3,125 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bhavinee Singh | Portfolio Dashboard</title>
+  <title>Bhavinee Singh | UX Designer Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-  <div class="flex min-h-screen">
-    <!-- Sidebar -->
-    <aside class="w-64 bg-gray-900 text-white p-6 flex flex-col justify-between">
-      <div>
-        <h1 class="text-2xl font-bold mb-10">Bhavinee Singh</h1>
-        <nav class="space-y-4">
-          <a href="#" class="block text-white hover:text-pink-400">🏠 Home</a>
-          <a href="#projects" class="block text-white hover:text-pink-400">💻 Projects</a>
-          <a href="#skills" class="block text-white hover:text-pink-400">🛠 Skills</a>
-          <a href="#contact" class="block text-white hover:text-pink-400">📬 Contact</a>
-        </nav>
-      </div>
-      <footer class="text-sm text-gray-400">© 2025 Bhavinee</footer>
-    </aside>
+<body class="bg-black text-white font-sans">
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-6">
+    <p class="text-gray-400 text-sm">Hey there!</p>
+    <h1 class="text-4xl md:text-5xl font-extrabold mt-4">I’m Bhavinee Singh, a UX designer<br>based in NYC.</h1>
+    <img src="https://via.placeholder.com/160" alt="Bhavinee" class="w-40 h-40 rounded-full mx-auto mt-6 object-cover" />
+  </section>
 
-    <!-- Main Content -->
-    <main class="flex-1 p-10">
-      <section class="mb-10">
-        <h2 class="text-3xl font-bold mb-2">Welcome, Bhavinee 👋</h2>
-        <p class="text-gray-600">Your all-in-one developer portfolio dashboard</p>
-      </section>
+  <!-- Showcase Work Section -->
+  <section class="py-16 bg-gradient-to-br from-gray-900 to-black text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-xl font-semibold text-white mb-4">Showcase your work</h2>
+      <p class="text-gray-400 mb-6">Convince recruiters with compelling case studies</p>
+      <button class="bg-white text-black px-4 py-2 rounded hover:bg-gray-200 font-medium transition">+ Add case study</button>
+    </div>
+  </section>
 
-      <!-- Cards -->
-      <div class="grid md:grid-cols-3 gap-6 mb-12">
-        <div class="bg-purple-100 p-5 rounded-xl shadow">
-          <h3 class="font-semibold text-lg mb-2">Complete profile</h3>
-          <p class="text-sm text-gray-700">Get discovered by recruiters</p>
-        </div>
-        <div class="bg-blue-100 p-5 rounded-xl shadow">
-          <h3 class="font-semibold text-lg mb-2">Explore projects</h3>
-          <p class="text-sm text-gray-700">Check out your featured work</p>
-        </div>
-        <div class="bg-yellow-100 p-5 rounded-xl shadow">
-          <h3 class="font-semibold text-lg mb-2">Connect</h3>
-          <p class="text-sm text-gray-700">Share portfolio with others</p>
-        </div>
-      </div>
-
-      <!-- Projects Section -->
-      <section id="projects" class="mb-12">
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">🚀 Projects</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-white p-5 rounded-xl shadow">
-            <h3 class="font-semibold">PostHub</h3>
-            <p class="text-sm text-gray-600">CRUD blog platform</p>
-            <a href="https://posthub-9mgz.onrender.com/posts" class="text-blue-600 text-sm underline">View</a>
-          </div>
-          <div class="bg-white p-5 rounded-xl shadow">
-            <h3 class="font-semibold">SOS Emergency Alert</h3>
-            <p class="text-sm text-gray-600">Email alerts with location</p>
-            <a href="https://sos-jknr.onrender.com/" class="text-blue-600 text-sm underline">View</a>
-          </div>
-          <div class="bg-white p-5 rounded-xl shadow">
-            <h3 class="font-semibold">AI Chatbot</h3>
-            <p class="text-sm text-gray-600">Chat with Gemini API</p>
-            <a href="https://bhavinee88533.github.io/chatbot/" class="text-blue-600 text-sm underline">View</a>
-          </div>
-          <div class="bg-white p-5 rounded-xl shadow">
-            <h3 class="font-semibold">Metro Route Finder</h3>
-            <p class="text-sm text-gray-600">Java console app</p>
-            <a href="https://github.com/Bhavinee88533/Delhi-Metro-Route-Finder-/blob/main/DelhiMetroApp.java" class="text-blue-600 text-sm underline">View</a>
-          </div>
-          <div class="bg-white p-5 rounded-xl shadow">
-            <h3 class="font-semibold">Currency Converter</h3>
-            <p class="text-sm text-gray-600">Using public APIs</p>
-            <a href="http://bhavinee88533.github.io/currency_converter/" class="text-blue-600 text-sm underline">View</a>
-          </div>
-          <div class="bg-white p-5 rounded-xl shadow">
-            <h3 class="font-semibold">Thought Generator</h3>
-            <p class="text-sm text-gray-600">Daily motivational quotes</p>
-            <a href="https://bhavinee88533.github.io/daily-thoughts-generator/" class="text-blue-600 text-sm underline">View</a>
-          </div>
-          <div class="bg-white p-5 rounded-xl shadow">
-            <h3 class="font-semibold">Task Scheduler</h3>
-            <p class="text-sm text-gray-600">Java task reminder tool</p>
-            <a href="https://github.com/Bhavinee88533/TaskScheduler/blob/main/TaskScheduler.java" class="text-blue-600 text-sm underline">View</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Skills -->
-      <section id="skills" class="mb-12">
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">🛠 Skills</h2>
-        <div class="grid md:grid-cols-2 gap-6 text-gray-700">
-          <div>
-            <h4 class="font-semibold mb-1">Technical Skills</h4>
-            <ul class="list-disc ml-5">
-              <li>React.js, HTML, CSS, JS, Tailwind</li>
-              <li>Node.js, Express.js, MongoDB</li>
-              <li>REST APIs, SQL</li>
-              <li>Java, C</li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="font-semibold mb-1">Soft Skills</h4>
-            <ul class="list-disc ml-5">
-              <li>Communication</li>
-              <li>Problem Solving</li>
-              <li>Teamwork</li>
-              <li>Adaptability</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact" class="mb-12">
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">📬 Contact</h2>
-        <div class="text-gray-700 space-y-1">
-          <p>Email: <a href="mailto:bhavineesingh88533@gmail.com" class="text-blue-500">bhavineesingh88533@gmail.com</a></p>
-          <p>Location: Bahraich, India – 201801</p>
-          <p>GitHub: <a href="https://github.com/Bhavinee88533" class="text-blue-500">Bhavinee88533</a></p>
-        </div>
-      </section>
-    </main>
-  </div>
+  <!-- Contact Section -->
+  <footer class="text-center py-16 px-6 bg-black">
+    <h2 class="text-xl font-semibold mb-3">Would you like to get in touch? Drop me a line at</h2>
+    <a href="mailto:bhavineesingh88533@gmail.com" class="text-pink-400 text-lg font-mono hover:underline">bhavineesingh88533@gmail.com</a>
+  </footer>
 </body>
 </html>
