@@ -3,81 +3,125 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bhavinee Singh | Portfolio</title>
+  <title>Bhavinee Singh | Portfolio Dashboard</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-  </style>
 </head>
-<body class="bg-gradient-to-r from-gray-900 to-black text-white">
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-gray-900 text-white p-6 flex flex-col justify-between">
+      <div>
+        <h1 class="text-2xl font-bold mb-10">Bhavinee Singh</h1>
+        <nav class="space-y-4">
+          <a href="#" class="block text-white hover:text-pink-400">🏠 Home</a>
+          <a href="#projects" class="block text-white hover:text-pink-400">💻 Projects</a>
+          <a href="#skills" class="block text-white hover:text-pink-400">🛠 Skills</a>
+          <a href="#contact" class="block text-white hover:text-pink-400">📬 Contact</a>
+        </nav>
+      </div>
+      <footer class="text-sm text-gray-400">© 2025 Bhavinee</footer>
+    </aside>
 
-  <!-- Header -->
-  <section class="text-center py-16 px-4">
-    <h1 class="text-5xl font-extrabold text-pink-400 mb-3 drop-shadow-lg">Bhavinee Singh</h1>
-    <p class="text-xl text-gray-300">Full Stack Developer | Problem Solver</p>
-  </section>
+    <!-- Main Content -->
+    <main class="flex-1 p-10">
+      <section class="mb-10">
+        <h2 class="text-3xl font-bold mb-2">Welcome, Bhavinee 👋</h2>
+        <p class="text-gray-600">Your all-in-one developer portfolio dashboard</p>
+      </section>
 
-  <!-- Projects -->
-  <section class="px-6 py-12 bg-gray-800 rounded-3xl mx-4 my-6 shadow-2xl">
-    <h2 class="text-3xl font-bold text-pink-400 mb-8 text-center">🚀 Projects</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-gray-700 p-6 rounded-xl shadow-lg hover:scale-105 transition-transform">
-        <h3 class="text-xl font-semibold mb-2">PostHub</h3>
-        <p class="text-gray-300 mb-2">CRUD blog platform using Node, Express, MongoDB</p>
-        <a href="https://posthub-9mgz.onrender.com/posts" class="text-blue-400 underline">Visit →</a>
+      <!-- Cards -->
+      <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <div class="bg-purple-100 p-5 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-2">Complete profile</h3>
+          <p class="text-sm text-gray-700">Get discovered by recruiters</p>
+        </div>
+        <div class="bg-blue-100 p-5 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-2">Explore projects</h3>
+          <p class="text-sm text-gray-700">Check out your featured work</p>
+        </div>
+        <div class="bg-yellow-100 p-5 rounded-xl shadow">
+          <h3 class="font-semibold text-lg mb-2">Connect</h3>
+          <p class="text-sm text-gray-700">Share portfolio with others</p>
+        </div>
       </div>
-      <div class="bg-gray-700 p-6 rounded-xl shadow-lg hover:scale-105 transition-transform">
-        <h3 class="text-xl font-semibold mb-2">SOS Alert System</h3>
-        <p class="text-gray-300 mb-2">Emergency alerts with live location via email</p>
-        <a href="https://sos-jknr.onrender.com/" class="text-blue-400 underline">Visit →</a>
-      </div>
-      <div class="bg-gray-700 p-6 rounded-xl shadow-lg hover:scale-105 transition-transform">
-        <h3 class="text-xl font-semibold mb-2">AI Chatbot</h3>
-        <p class="text-gray-300 mb-2">Multi-modal chatbot using Gemini API</p>
-        <a href="https://bhavinee88533.github.io/chatbot/" class="text-blue-400 underline">Visit →</a>
-      </div>
-      <div class="bg-gray-700 p-6 rounded-xl shadow-lg hover:scale-105 transition-transform">
-        <h3 class="text-xl font-semibold mb-2">Delhi Metro Finder</h3>
-        <p class="text-gray-300 mb-2">Shortest path finder using Dijkstra's algorithm</p>
-        <a href="https://github.com/Bhavinee88533/Delhi-Metro-Route-Finder-/blob/main/DelhiMetroApp.java" class="text-blue-400 underline">Visit →</a>
-      </div>
-    </div>
-  </section>
 
-  <!-- Skills -->
-  <section class="px-6 py-12">
-    <h2 class="text-3xl font-bold text-pink-400 mb-6 text-center">🛠 Skills</h2>
-    <div class="grid md:grid-cols-2 gap-6 text-gray-300">
-      <div class="bg-gray-800 p-6 rounded-xl shadow-md">
-        <h4 class="font-semibold text-white mb-2">Technical</h4>
-        <ul class="list-disc ml-5 space-y-1">
-          <li>Frontend: HTML, CSS, JS, React, Tailwind</li>
-          <li>Backend: Node.js, Express.js, REST APIs</li>
-          <li>Database: MongoDB, SQL</li>
-          <li>Languages: Java, C</li>
-        </ul>
-      </div>
-      <div class="bg-gray-800 p-6 rounded-xl shadow-md">
-        <h4 class="font-semibold text-white mb-2">Interpersonal</h4>
-        <ul class="list-disc ml-5 space-y-1">
-          <li>Communication</li>
-          <li>Adaptability</li>
-          <li>Leadership</li>
-          <li>Problem Solving</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+      <!-- Projects Section -->
+      <section id="projects" class="mb-12">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">🚀 Projects</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="bg-white p-5 rounded-xl shadow">
+            <h3 class="font-semibold">PostHub</h3>
+            <p class="text-sm text-gray-600">CRUD blog platform</p>
+            <a href="https://posthub-9mgz.onrender.com/posts" class="text-blue-600 text-sm underline">View</a>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow">
+            <h3 class="font-semibold">SOS Emergency Alert</h3>
+            <p class="text-sm text-gray-600">Email alerts with location</p>
+            <a href="https://sos-jknr.onrender.com/" class="text-blue-600 text-sm underline">View</a>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow">
+            <h3 class="font-semibold">AI Chatbot</h3>
+            <p class="text-sm text-gray-600">Chat with Gemini API</p>
+            <a href="https://bhavinee88533.github.io/chatbot/" class="text-blue-600 text-sm underline">View</a>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow">
+            <h3 class="font-semibold">Metro Route Finder</h3>
+            <p class="text-sm text-gray-600">Java console app</p>
+            <a href="https://github.com/Bhavinee88533/Delhi-Metro-Route-Finder-/blob/main/DelhiMetroApp.java" class="text-blue-600 text-sm underline">View</a>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow">
+            <h3 class="font-semibold">Currency Converter</h3>
+            <p class="text-sm text-gray-600">Using public APIs</p>
+            <a href="http://bhavinee88533.github.io/currency_converter/" class="text-blue-600 text-sm underline">View</a>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow">
+            <h3 class="font-semibold">Thought Generator</h3>
+            <p class="text-sm text-gray-600">Daily motivational quotes</p>
+            <a href="https://bhavinee88533.github.io/daily-thoughts-generator/" class="text-blue-600 text-sm underline">View</a>
+          </div>
+          <div class="bg-white p-5 rounded-xl shadow">
+            <h3 class="font-semibold">Task Scheduler</h3>
+            <p class="text-sm text-gray-600">Java task reminder tool</p>
+            <a href="https://github.com/Bhavinee88533/TaskScheduler/blob/main/TaskScheduler.java" class="text-blue-600 text-sm underline">View</a>
+          </div>
+        </div>
+      </section>
 
-  <!-- Contact -->
-  <section class="px-6 py-12 bg-gray-800 text-center rounded-t-3xl">
-    <h2 class="text-3xl font-bold text-pink-400 mb-4">📬 Contact</h2>
-    <p class="text-gray-300">📧 <a href="mailto:bhavineesingh88533@gmail.com" class="underline text-blue-300">bhavineesingh88533@gmail.com</a></p>
-    <p class="text-gray-300">📍 Bahraich, India – 201801</p>
-    <p class="text-gray-300">🔗 <a href="https://github.com/Bhavinee88533" class="underline text-blue-300" target="_blank">GitHub</a></p>
-  </section>
+      <!-- Skills -->
+      <section id="skills" class="mb-12">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">🛠 Skills</h2>
+        <div class="grid md:grid-cols-2 gap-6 text-gray-700">
+          <div>
+            <h4 class="font-semibold mb-1">Technical Skills</h4>
+            <ul class="list-disc ml-5">
+              <li>React.js, HTML, CSS, JS, Tailwind</li>
+              <li>Node.js, Express.js, MongoDB</li>
+              <li>REST APIs, SQL</li>
+              <li>Java, C</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-1">Soft Skills</h4>
+            <ul class="list-disc ml-5">
+              <li>Communication</li>
+              <li>Problem Solving</li>
+              <li>Teamwork</li>
+              <li>Adaptability</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
+      <!-- Contact -->
+      <section id="contact" class="mb-12">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">📬 Contact</h2>
+        <div class="text-gray-700 space-y-1">
+          <p>Email: <a href="mailto:bhavineesingh88533@gmail.com" class="text-blue-500">bhavineesingh88533@gmail.com</a></p>
+          <p>Location: Bahraich, India – 201801</p>
+          <p>GitHub: <a href="https://github.com/Bhavinee88533" class="text-blue-500">Bhavinee88533</a></p>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
